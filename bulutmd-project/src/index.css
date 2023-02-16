@@ -2,6 +2,11 @@
   font-family:Arial, Helvetica, sans-serif;
   margin: 0;
 }
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 .title{
   display: flex;
@@ -48,6 +53,7 @@
 
 .main{
   display: flex;
+  flex-grow: 1;
   justify-content: center;
   align-items: center;
   padding: 74px;
@@ -80,8 +86,9 @@
 
 
 .footer{
-  background-color: rgb(44, 43, 43);
-  padding: 24px 0px;
+  background-color: rgb(0, 0, 0);
+  padding: 16px 0px;
+  margin-top: auto;
 }
 .footer--text{
   font-size: 14px;
@@ -90,7 +97,26 @@
   align-items: center;
   padding-left: 50px;
   cursor: pointer;
+  padding-bottom: 8px;
 }
 .footer--text >p {
   padding-left: 4px;
 }
+.footer-facelogo{
+  padding-left: 40px;
+  width: 32px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.footer-tweetlogo{
+  padding-left: 12px;
+  border-radius: 6px;
+  width: 32px;
+  cursor: pointer;
+}
+
+
+
+
+
+/* MOVİES */

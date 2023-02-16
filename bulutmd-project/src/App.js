@@ -14,7 +14,7 @@ function App() {
       path: "/",
       element: <Homepage />,
     },{
-      path: "/movies",
+      path: "movies",
       element: <Movies />
     },{
       path: "series",
