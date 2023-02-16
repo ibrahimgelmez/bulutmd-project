@@ -1,15 +1,29 @@
 import {useState} from "react";
-import Webdesign from "../Webdesign"
+import Webdesign from "../Webdesign";
+import SampleData from "../sample.json";
+
+//images
+import witcherposter from "../imgs/witcher-2021.png"
 
 export default function Movies(){
-  const [movies,setMovies] = useState(["movie 1","movie 2", "movie 3", "movie 4","movie 5"])
+  const [data,setData] = useState(SampleData.entries)
+  const movies = data.filter(data => data.programType === "movie")
 
-  const moviesMap = movies.map(movie => <h2>{movie}</h2>)
+
+  const moviesMap = movies.map(movie => 
+  <div className = "releasedmovies">
+    <img className="released--poster" src={witcherposter} />
+    <h2>{movie.title}</h2>
+  </div>
+  )
   return(
     <Webdesign moviesMap={moviesMap} render={()=>(
-     <div className="movies--container">
-        {moviesMap}
-     </div>
+      <>
+      <input icon="search" className="search-input" placeholder="Film / Dizi / Oyuncu ara"/>
+      <div className="movies--container">
+          {moviesMap}
+      </div>
+     </>
     )} />
   )
 }

@@ -57,6 +57,7 @@ body{
   justify-content: center;
   align-items: center;
   padding: 74px;
+  
 }
 .main--movies{
   text-align: center;
@@ -120,3 +121,29 @@ body{
 
 
 /* MOVİES */
+
+.search-input{
+  width: 360px;
+  padding: 12px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  margin: 28px 12px;
+  margin-left: 86px;
+}
+
+.movies--container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-bottom: 16px;  
+}
+.releasedmovies{
+  text-align: center; 
+  font-size: small; 
+  
+}
+.released--poster{
+  width: 200px;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}

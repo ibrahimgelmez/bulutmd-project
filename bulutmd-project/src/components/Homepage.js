@@ -14,11 +14,13 @@ export default function Homepage(){
 
       <main className="main">
         <div className="main--movies">
-          <img className="main--jumanjiposter" src={jumanjiposter}/>
+          
+          <img alt="jumanjiposter" className="main--jumanjiposter" src={jumanjiposter}/>
           <h2>Movies</h2>
+          
         </div>
         <div className="main--series">
-          <img className="main--witcherposter" src={witcherposter} />
+          <img alt="witcherposter" className="main--witcherposter" src={witcherposter} />
           <h2>Series</h2>
         </div>
       </main>
