@@ -7,20 +7,13 @@ import twitterlogo from "./imgs/twitter-256.png"
 
 class Webdesign extends Component {   //Bu web desenini birçok sayfada kullanmam gerekeceği için kod tekrarı yapmamak
   //adına bir web design componenti oluşturdum ve bu deseni kullanacağım sayfaları buraya prop geçerek birleştirdim.
-  state = {
-    
-  }
-  
-  toggle = () => {
-    
-  }
-  
+
   render() {
       return (
         <div>
-          <header className="header">
+          <header className="header">  
             <div className="title">
-              <h1 className="header--title">BulutMD</h1>
+              <Link to="/" style={{textDecoration:"none",color:"white"}}><h1 className="header--title">BulutMD</h1></Link>
               <div className="header--buttons">
                 <button className="login-button">Giriş</button>
                 <button className="trial-button">Deneme Başlat</button>
@@ -37,8 +30,8 @@ class Webdesign extends Component {   //Bu web desenini birçok sayfada kullanma
               <p>| Kullanıcı Sözleşmesi</p>
               <p>| Gizlilik Sözleşmesi</p>
             </div>
-            <img className="footer-facelogo" src={facebooklogo}/>
-            <img className="footer-tweetlogo" src={twitterlogo}/>
+            <a href="https://www.facebook.com/bulutmdyazilim/" target={"_blank"}><img className="footer-facelogo" src={facebooklogo}/></a>
+            <a href="https://twitter.com/bulut_mdyazilim" target={"_blank"}><img className="footer-tweetlogo" src={twitterlogo}/></a>
           </footer>
         </div>
       )

@@ -15,12 +15,12 @@ export default function Homepage(){
       <main className="main">
         <div className="main--movies">
           
-          <img alt="jumanjiposter" className="main--jumanjiposter" src={jumanjiposter}/>
+          <Link to="/movies"><img alt="jumanjiposter" className="main--jumanjiposter" src={jumanjiposter}/></Link>
           <h2>Movies</h2>
           
         </div>
         <div className="main--series">
-          <img alt="witcherposter" className="main--witcherposter" src={witcherposter} />
+          <Link to="/series"><img alt="witcherposter" className="main--witcherposter" src={witcherposter} /></Link>
           <h2>Series</h2>
         </div>
       </main>

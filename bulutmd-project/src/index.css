@@ -16,6 +16,9 @@ body{
   background-color: black;
   color: white;
 }
+
+/* HEADER */
+
 .header--title{
   padding-left: 80px;
   margin: 10px;
@@ -50,6 +53,7 @@ body{
 
 
 
+/* MAIN */
 
 .main{
   display: flex;
@@ -81,10 +85,7 @@ body{
 }
 
 
-
-
-
-
+/* FOOTER */
 
 .footer{
   background-color: rgb(0, 0, 0);
@@ -118,9 +119,7 @@ body{
 
 
 
-
-
-/* MOVİES */
+/* MOVİES AND SERİES */
 
 .search-input{
   width: 360px;
@@ -131,12 +130,13 @@ body{
   margin-left: 86px;
 }
 
-.movies--container{
+.release--container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   margin-bottom: 16px;  
+  row-gap: 26px;
 }
-.releasedmovies{
+.released{
   text-align: center; 
   font-size: small; 
   

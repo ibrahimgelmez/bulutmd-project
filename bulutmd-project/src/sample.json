@@ -470,30 +470,17 @@
       "releaseYear": 2014
     },
     {
-      "title": "Eye Candy",
+      "title": "Danny Collins",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "programType": "series",
+      "programType": "movie",
       "images": {
         "Poster Art": {
-          "url": "https://streamcoimg-a.akamaihd.net/000/108/72/10872-PosterArt-25f67e1932dffe23acee016241ef2610.jpg",
+          "url": "https://streamcoimg-a.akamaihd.net/000/999/667/999667-PosterArt-65e6f88ede8bdcdad6d4d4f1549936ee.jpg",
           "width": 1000,
           "height": 1500
         }
       },
-      "releaseYear": 2015
-    },
-    {
-      "title": "HAPPYish",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "programType": "series",
-      "images": {
-        "Poster Art": {
-          "url": "https://streamcoimg-a.akamaihd.net/000/119/98/11998-PosterArt-c937329b04129ead97d0503818b5e54a.jpg",
-          "width": 720,
-          "height": 1080
-        }
-      },
-      "releaseYear": 2015
+      "releaseYear": 2014
     },
     {
       "title": "Friends",
@@ -639,18 +626,161 @@
       "releaseYear": 2015
     },
     {
-      "title": "Beauty and the Beast",
+      "title": "Prisoners",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "programType": "series",
+      "programType": "movie",
       "images": {
         "Poster Art": {
-          "url": "https://streamcoimg-a.akamaihd.net/000/139/76/13976-PosterArt-6d33e74aa9ec685bf96a3e692521c3ae.jpg",
+          "url": "https://streamcoimg-a.akamaihd.net/000/408/331/408331-PosterArt-75cb706fded100b4f28cc6b1a007fc1c.jpg",
           "width": 1000,
           "height": 1500
         }
       },
-      "releaseYear": 2012
-    
+      "releaseYear": 2013
+    },
+    {
+      "title": "Ages Of Love",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "programType": "movie",
+      "images": {
+        "Poster Art": {
+          "url": "https://streamcoimg-a.akamaihd.net/000/372/670/372670-PosterArt-0c1d61510fdf59ff32299038e669db44.jpg",
+          "width": 350,
+          "height": 525
+        }
+      },
+      "releaseYear": 2010
+    },
+    {
+      "title": "How To Train Your Dragon",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "programType": "movie",
+      "images": {
+        "Poster Art": {
+          "url": "https://streamcoimg-a.akamaihd.net/000/110/1196/1101196-PosterArt-c47d98ddca64ef18cf79c78d6ab8b3ad.jpg",
+          "width": 1000,
+          "height": 1500
+        }
+      },
+      "releaseYear": 2010
+    },
+    {
+      "title": "I Am Legend",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "programType": "movie",
+      "images": {
+        "Poster Art": {
+          "url": "https://streamcoimg-a.akamaihd.net/000/375/797/375797-PosterArt-f456379f7c61bcd9c8f9fc781f4bce28.jpg",
+          "width": 1000,
+          "height": 1500
+        }
+      },
+      "releaseYear": 2008
+    },
+    {
+      "title": "Tracers",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "programType": "movie",
+      "images": {
+        "Poster Art": {
+          "url": "https://streamcoimg-a.akamaihd.net/000/958/724/958724-PosterArt-28f056d80c744f0ca9418250db9e4c61.jpg",
+          "width": 1000,
+          "height": 1500
+        }
+      },
+      "releaseYear": 2015
+    },
+    {
+      "title": "Nasty Baby",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "programType": "movie",
+      "images": {
+        "Poster Art": {
+          "url": "https://streamcoimg-a.akamaihd.net/000/110/1174/1101174-PosterArt-c1fe5d416b9e410b8726893272e8711a.jpg",
+          "width": 1000,
+          "height": 1500
+        }
+      },
+      "releaseYear": 2015
+    },
+    {
+      "title": "Sex and the City 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "programType": "movie",
+      "images": {
+        "Poster Art": {
+          "url": "https://streamcoimg-a.akamaihd.net/000/328/010/092e34afe0648a42cf12beb2d7557a65.jpg",
+          "width": 500,
+          "height": 750
+        }
+      },
+      "releaseYear": 2009
+    },
+    {
+      "title": "The Voices",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "programType": "movie",
+      "images": {
+        "Poster Art": {
+          "url": "https://streamcoimg-a.akamaihd.net/000/103/5938/1035938-PosterArt-4131ef088343f85d686806f2b80253c1.jpg",
+          "width": 1400,
+          "height": 2100
+        }
+      },
+      "releaseYear": 2013
+    },
+    {
+      "title": "Just Friends",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "programType": "movie",
+      "images": {
+        "Poster Art": {
+          "url": "https://streamcoimg-a.akamaihd.net/000/375/664/375664-PosterArt-d11924fb0752525039b1168197030753.jpg",
+          "width": 500,
+          "height": 750
+        }
+      },
+      "releaseYear": 2005
+    },
+    {
+      "title": "Ernest & Celestine",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "programType": "movie",
+      "images": {
+        "Poster Art": {
+          "url": "https://streamcoimg-a.akamaihd.net/000/928/838/928838-PosterArt-c3d8ac708b712062e519a3b106469595.jpg",
+          "width": 1000,
+          "height": 1500
+        }
+      },
+      "releaseYear": 2014
+    },
+    {
+      "title": "Leon: The Professional",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "programType": "movie",
+      "images": {
+        "Poster Art": {
+          "url": "https://streamcoimg-a.akamaihd.net/000/119/3838/1193838-PosterArt-7328f58d3e64953a540a3543a5cd5c39.jpg",
+          "width": 1000,
+          "height": 1500
+        }
+      },
+      "releaseYear": 1994
+    },
+    {
+      "title": "A Lego Brickumentary",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "programType": "movie",
+      "images": {
+        "Poster Art": {
+          "url": "https://streamcoimg-a.akamaihd.net/000/109/8345/1098345-PosterArt-f0f207e02947ca76d9f9b238aea54dc1.jpg",
+          "width": 1000,
+          "height": 1500
+        }
+      },
+      "releaseYear": 2015
     }
+   
   ]
 }
