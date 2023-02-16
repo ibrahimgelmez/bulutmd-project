@@ -1,31 +1,34 @@
 import React from "react";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Homepage from "./components/Homepage";
+import Movies from "./components/Movies";
+import Series from "./components/Series";
 
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Homepage />,
+    },{
+      path: "/movies",
+      element: <Movies />
+    },{
+      path: "series",
+      element: <Series />
+    }
+    
+  ]);
+  
+
   return (
-    <>
-      <header className="header">
-        <div className="title">
-          <h1 className="header--title">BulutMD</h1>
-          <div className="header--buttons">
-            <button className="login-button">Giriş</button>
-            <button className="trial-button">Deneme Başlat</button>
-          </div>
-          
-        </div>
-        
-        <h2 className="header--downtitle">Popüler Başlıklar</h2>
-      </header>
-
-      <main>
-
-      </main>
-
-      <footer>
-        
-      </footer>
-    </>
-  );
+  <RouterProvider router={router} />
+    
+    
+  )
 }
 
 export default App;
