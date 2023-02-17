@@ -10,9 +10,10 @@ export default function Movies(){
   //bir film sitesinden örnek verirsek belgesel-korku-aksiyon vs. gibi çeşitli kategori sayfaları var ve bunların her biri için
   // aşağı yukarı aynı çeşit görünümler kullanılıyor.bu görünümleri her seferinde tekrar tekrar kopyalamak yerine prop render 
   //yöntemi beni kodumu tekrarlamaktan kurtarırdı.Fakat şuan bu test projesi için sadece 2 sayfa yapmam gerektiğinden dolayı seriesteki kodu kopyalayıp buraya yapıştırdım.
+  const movies = data.filter(data => data.programType === "movie")
   const [inputText,setInputText] = useState("")
 
-  const movies = data.filter(data => data.programType === "movie")
+  const [optionValue,setOptionValue] = useState()
 
   function inputHandler(e){
     const lowerCase = e.target.value.toLowerCase()
@@ -26,9 +27,17 @@ export default function Movies(){
     }else{
       return movie.title.toLowerCase().includes(inputText)
     }
+  })  
+  const sortedArray = filteredData.sort((a,b)=>{      //sadece buraya 3-4 saatimi verdim ve hiçbir kaynaktan dropdown ile sıralama
+    if(optionValue === "yenideneskiye"){              //hakkında bilgi bulamadığım için kendi çözüm yöntemimi üretmek zorunda kaldım.
+      return b.releaseYear - a.releaseYear  
+    }else if(optionValue === "eskidenyeniye"){   //Örnek projede rastgele sıralama ve puana göre sıralama da vardı fakat veri setinde herhangi
+      return a.releaseYear - b.releaseYear       //bir puanlama olmadığı için yapmadım ama yapsaydım da soldaki gibi birşey yapardım.
+    }                                            //rastgele sıralama için de veriler zaten rastgele sıralandığı için select elementinin default değerini rastgele yaptım.
+
   })
 
-  const moviesMap = filteredData.map(movie => 
+  const moviesMap = sortedArray.map(movie => 
   <div className = "released">
     <img className="released--poster" src={jumanjiposter} />
     <h2>{movie.title}</h2>
@@ -38,10 +47,20 @@ export default function Movies(){
   return(
     <Webdesign moviesMap={moviesMap} render={()=>(
       <>
-      <input 
-      onChange={inputHandler} 
-      className="search-input" 
-      placeholder="Film ara"/>
+      <div className="find-and-sort">
+        <input 
+        onChange={inputHandler} 
+        className="search-input" 
+        placeholder="Film ara"/>
+
+        <select defaultValue="rastgele" onChange={(e)=>setOptionValue(e.target.value)} className="sort-select">
+        <option value="yenideneskiye">Yeniye Göre Sırala</option>
+        <option value="eskidenyeniye">Eskiye Göre Sırala</option>
+        <option value="puanagöre">Puana Göre Sırala</option>
+        <option value="rastgele">Rastgele Sırala</option>
+        </select>
+      </div>
+      
 
       <div className="release--container">
           {moviesMap}

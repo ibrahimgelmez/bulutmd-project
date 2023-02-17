@@ -121,6 +121,12 @@ body{
 
 /* MOVİES AND SERİES */
 
+.find-and-sort{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .search-input{
   width: 360px;
   padding: 12px;
@@ -128,6 +134,15 @@ body{
   border-radius: 3px;
   margin: 28px 12px;
   margin-left: 86px;
+}
+
+.sort-select{
+ height: 44px;
+ padding: 4px 16px;
+ margin-right: 60px;
+}
+.sort-select >option {
+  font-size: 16px;
 }
 
 .release--container{

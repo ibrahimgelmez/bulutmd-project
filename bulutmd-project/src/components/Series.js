@@ -9,6 +9,9 @@ export default function Movies(){
   const [data,setData] = useState(SampleData.entries)
   const [inputText,setInputText] = useState("")
 
+  const [optionValue,setOptionValue] = useState()
+
+
   //Gelen veri setinden dizi ve filmleri ayırmak için filter metodunu kullandım.
   const series = data.filter(data => data.programType === "series")  
 
@@ -29,8 +32,18 @@ export default function Movies(){
     }
   })
 
+  const sortedArray = filteredData.sort((a,b)=>{      
+    if(optionValue === "yenideneskiye"){              
+      return b.releaseYear - a.releaseYear  
+    }else if(optionValue === "eskidenyeniye"){   
+      return a.releaseYear - b.releaseYear       
+    }                                            
+
+  })
+
+  console.log(sortedArray)
   //filtrelenmiş  dataların her birini map metoduyla gezerek ekrana yazdırdım.released isimlendirmesinin doğru bir seçim olup olmadığıyla alakalı şüphelerim var.
-  const seriesMap = filteredData.map(series => 
+  const seriesMap = sortedArray.map(series => 
   <div className = "released">   
     <img className="released--poster" src={witcherposter} />
     <h2>{series.title}</h2>
@@ -41,11 +54,19 @@ export default function Movies(){
     //Burada da aynı web desenini kullanacağım için önceden yazdığım web deseni içerisine bunları prop geçtim.
     <Webdesign seriesMap={seriesMap} render={()=>(   
       <>
-      <input 
-      onChange={inputHandler} 
-      className="search-input" 
-      placeholder="Dizi ara"/>
+        <div className="find-and-sort">
+          <input 
+          onChange={inputHandler} 
+          className="search-input" 
+          placeholder="Film ara"/>
 
+          <select defaultValue="rastgele" onChange={(e)=>setOptionValue(e.target.value)} className="sort-select">
+          <option value="yenideneskiye">Yeniye Göre Sırala</option>
+          <option value="eskidenyeniye">Eskiye Göre Sırala</option>
+          <option value="puanagöre">Puana Göre Sırala</option>
+          <option value="rastgele">Rastgele Sırala</option>
+          </select>
+        </div>
       <div className="release--container">
           {seriesMap}
       </div>
