@@ -28,13 +28,12 @@ export default function Movies(){
       return movie.title.toLowerCase().includes(inputText)
     }
   })  
-  const sortedArray = filteredData.sort((a,b)=>{      //sadece buraya 3-4 saatimi verdim ve hiçbir kaynaktan dropdown ile sıralama
-    if(optionValue === "yenideneskiye"){              //hakkında bilgi bulamadığım için kendi çözüm yöntemimi üretmek zorunda kaldım.
+  const sortedArray = filteredData.sort((a,b)=>{      
+    if(optionValue === "yenideneskiye"){              
       return b.releaseYear - a.releaseYear  
-    }else if(optionValue === "eskidenyeniye"){   //Örnek projede rastgele sıralama ve puana göre sıralama da vardı fakat veri setinde herhangi
-      return a.releaseYear - b.releaseYear       //bir puanlama olmadığı için yapmadım ama yapsaydım da soldaki gibi birşey yapardım.
-    }                                            //rastgele sıralama için de veriler zaten rastgele sıralandığı için select elementinin default değerini rastgele yaptım.
-
+    }else if(optionValue === "eskidenyeniye"){   
+      return a.releaseYear - b.releaseYear       
+    }                                            
   })
 
   const moviesMap = sortedArray.map(movie => 

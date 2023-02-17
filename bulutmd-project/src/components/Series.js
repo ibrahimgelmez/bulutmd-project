@@ -16,11 +16,13 @@ export default function Movies(){
   const series = data.filter(data => data.programType === "series")  
 
 
+
   //Burada arama çubuğunda girdiğim textleri elde edebilmek için bir fonksiyon yazdım.
   function inputHandler(e){
     const lowerCase = e.target.value.toLowerCase()
     setInputText(lowerCase)
   }
+
 
   //yukarıda elde ettiğim textleri burada includes fonksiyonu sayesindefilmlerin başlıklarında bu textlerin olup olmadığını kontrol ettim ve dahil olanları 
   //filteredData değişkenine kaydettim.
@@ -32,16 +34,20 @@ export default function Movies(){
     }
   })
 
-  const sortedArray = filteredData.sort((a,b)=>{      
-    if(optionValue === "yenideneskiye"){              
-      return b.releaseYear - a.releaseYear  
-    }else if(optionValue === "eskidenyeniye"){   
-      return a.releaseYear - b.releaseYear       
+
+
+  const sortedArray = filteredData.sort((a,b)=>{       //sadece buraya 3-4 saatimi verdim ve hiçbir kaynaktan dropdown ile sıralama
+    if(optionValue === "yenideneskiye"){              //hakkında bilgi bulamadığım için kendi çözüm yöntemimi üretmek zorunda kaldım.
+      return b.releaseYear - a.releaseYear            //Örnek projede rastgele sıralama ve puana göre sıralama da vardı fakat veri setinde herhangi
+    }else if(optionValue === "eskidenyeniye"){        //bir puanlama olmadığı için yapmadım ama yapsaydım da soldaki gibi birşey yapardım.
+      return a.releaseYear - b.releaseYear            //rastgele sıralama için de veriler zaten rastgele sıralandığı için select elementinin default değerini rastgele yaptım.
+
     }                                            
 
   })
 
-  console.log(sortedArray)
+
+
   //filtrelenmiş  dataların her birini map metoduyla gezerek ekrana yazdırdım.released isimlendirmesinin doğru bir seçim olup olmadığıyla alakalı şüphelerim var.
   const seriesMap = sortedArray.map(series => 
   <div className = "released">   
@@ -49,6 +55,7 @@ export default function Movies(){
     <h2>{series.title}</h2>
   </div>
   )
+
 
   return(
     //Burada da aynı web desenini kullanacağım için önceden yazdığım web deseni içerisine bunları prop geçtim.
@@ -67,9 +74,10 @@ export default function Movies(){
           <option value="rastgele">Rastgele Sırala</option>
           </select>
         </div>
-      <div className="release--container">
+
+        <div className="release--container">
           {seriesMap}
-      </div>
+        </div>
      </>
     )} />
   )

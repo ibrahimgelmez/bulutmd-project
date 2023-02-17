@@ -162,3 +162,71 @@ body{
   cursor: pointer;
   
 }
+
+
+
+
+/* DYNAMİC STYLES */
+
+@media (max-width:750px){
+  .header--title{
+    margin-left:0;
+    padding-left: 32px;
+  }
+  .header--buttons{
+    display: flex;
+    align-items: center;
+  }
+  .login-button{
+    font-size: 12px;
+    padding: 6px 8px;
+    margin-right: 12px;
+
+  }
+  .trial-button{
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+  .release--container{
+    grid-template-columns: 1fr 1fr;
+  }
+  .main--jumanjiposter{
+    width: 160px;
+  }
+  .main--witcherposter{
+    width: 160px;
+  }
+  .released--poster{
+    width: 160px;
+  }
+  .sort-select{
+    height: 36px;
+    padding: 2px 0px;
+    border: 1px solid black;
+    margin-right: 20px;
+  }
+  .search-input{
+    margin-left: 24px;
+    padding: 12px 28px;
+  }
+  
+}
+
+
+@media (min-width:751px) and (max-width:999px){
+  .release--container{
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
+}
+
+
+@media(min-width:1000px){
+  .release--container{
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+  }
+}
+@media(min-width:1501px){
+  .release--container{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
