@@ -61,6 +61,7 @@ body{
   justify-content: center;
   align-items: center;
   padding: 74px;
+  min-height: 52vh;
   
 }
 .main--movies{
@@ -90,7 +91,7 @@ body{
 .footer{
   background-color: rgb(0, 0, 0);
   padding: 16px 0px;
-  margin-top: auto;
+  
 }
 .footer--text{
   font-size: 14px;
