@@ -38,7 +38,7 @@ export default function Movies(){
 
   const moviesMap = sortedArray.map(movie => 
   <div className = "released">
-    <img className="released--poster" src={jumanjiposter} />
+    <img className="released--poster" src={movie.images["Poster Art"].url} />
     <h2>{movie.title}</h2>
   </div>
   )

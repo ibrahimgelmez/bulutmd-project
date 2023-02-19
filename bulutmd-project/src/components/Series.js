@@ -51,7 +51,7 @@ export default function Movies(){
   //filtrelenmiş  dataların her birini map metoduyla gezerek ekrana yazdırdım.released isimlendirmesinin doğru bir seçim olup olmadığıyla alakalı şüphelerim var.
   const seriesMap = sortedArray.map(series => 
   <div className = "released">   
-    <img className="released--poster" src={witcherposter} />
+    <img className="released--poster" src={series.images["Poster Art"].url} />
     <h2>{series.title}</h2>
   </div>
   )
