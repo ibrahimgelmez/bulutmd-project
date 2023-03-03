@@ -16,12 +16,12 @@ export default function Homepage(){
         <div className="main--movies">
           
           <Link to="/movies"><img alt="jumanjiposter" className="main--jumanjiposter" src={jumanjiposter}/></Link>
-          <h2>Movies</h2>
+          <h2>Filmler</h2>
           
         </div>
         <div className="main--series">
           <Link to="/series"><img alt="witcherposter" className="main--witcherposter" src={witcherposter} /></Link>
-          <h2>Series</h2>
+          <h2>Diziler</h2>
         </div>
       </main>
 
